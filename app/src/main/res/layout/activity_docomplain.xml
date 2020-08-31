@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    android:orientation="vertical"
+    tools:context=".create_complain">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:text="CREATE COMPLAIN"
+        android:textColor="#71A5BC"
+        android:textColorHint="@color/colorAccent"
+        android:textSize="30dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="TextView"
+        android:textColor="#F2F7F6"
+        android:textStyle="bold|italic" />
+
+    <EditText
+        android:id="@+id/complain_id"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:hint="Enter Complain ID"
+        android:textColor="#F2FFFFFF"
+        android:textColorHint="#CEFFFFFF" />
+
+    <TextView
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Select Complain Category"
+        android:textColor="#CEFFFFFF" />
+
+    <Spinner
+        android:id="@+id/spinnerCategory"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:entries="@array/categories" />
+
+    <TextView
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Select Complain Severity"
+
+        android:textColor="#CEFFFFFF" />
+
+    <Spinner
+        android:id="@+id/spinnerSeverity"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:entries="@array/severity" />
+
+    <EditText
+        android:id="@+id/description"
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:hint="Complain Description"
+        android:textColor="#F2FFFFFF"
+        android:textColorHint="#CEFFFFFF" />
+
+    <Button
+        android:id="@+id/submit_complain"
+        android:layout_width="196dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="#2196F3"
+        android:onClick="saveComplain"
+        android:text="SUBMIT COMPLAIN"
+        android:textColor="#F7FFFFFF"
+        android:textStyle="bold" />
+
+</LinearLayout>
